@@ -1,0 +1,51 @@
+@import "partials/variables/variables";
+
+.carta-img {
+    max-height: 450px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s;
+  }
+.carta-img:hover {
+  transform: scale(1.2);
+}
+  
+    .photos{
+      width: 300px;
+      height: 300px;
+      margin-top: 15px;
+    }
+    .ubi {
+        color: #000;
+        justify-content: center;
+        text-align: center;
+        font-family: $fuentepredeterminada1; 
+        margin: 15px 0 15px 0;
+      }
+      
+        .fotos {
+            justify-content: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-family: $fuentepredeterminada1; }
+          
+          .foto-finde {
+            width: 200px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+            font-family: $fuentepredeterminada1; }
+           
+            .bresh-img {
+              max-width: 60%;
+            }
+
+          iframe, video {
+            max-width: 600px;
+            max-height: 450px;
+            min-width: 50%;
+            margin-top: 15px;
+          }    

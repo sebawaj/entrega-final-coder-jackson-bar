@@ -1,0 +1,16 @@
+@import "partials/variables/variables";
+
+.pie {
+  font-family: $fuentepredeterminada1;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+footer {
+
+  a {
+    text-decoration: none;
+    font-family: $fuentepredeterminada2;
+  }
+}

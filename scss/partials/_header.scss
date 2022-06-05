@@ -1,0 +1,122 @@
+@import "partials/variables/variables";
+@import "sass2/extend";
+@import "sass2/mixins";
+
+nav {
+  background-color: white;
+  margin: auto;
+}
+
+.nav-section {
+  display: flex;
+  border: double;
+  flex-direction: column;
+  margin: 20px;
+  width: fit-content;
+  justify-content: space-around;
+  background-color: white;
+}
+
+nav:hover-1 {
+  background-color: aqua;
+  color: burlywood;
+}
+
+.menu {
+  margin: 10px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: $fuentepredeterminada1;
+  padding: 10px;
+  width: fit-content;
+  float: right;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.logo {
+  margin: 20px;
+  background-color: black;
+}
+
+h1 {
+  font-family: 'Didact Gothic';
+  font-size: 22px;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  background-color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.encabezado {
+  font-family: 'Didact Gothic';
+  background-color: black;
+}
+
+.logo {
+  width: 220px;
+  height: 120px;
+}
+
+.fondo-menu {
+  background-color: white;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  text-align: center;
+  font-family: $fuentepredeterminada1;
+}
+
+.lista-menu a:hover {
+  background-color: red;
+  color: black;
+}
+
+a:active {
+  color: darkgrey;
+  font-size: medium;
+}
+
+/*le eliminamos el subrayado a las anclas*/
+nav a {
+  font-family: $fuentepredeterminada1;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  background-color: rgba(255, 255, 255, 0.822);
+  margin: 0;
+  padding: 0;
+}
+
+.menu a:hover {
+  color: grey;
+  background-color: black;
+}
+
+h2.menu-titulo {
+  color: black;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  font-size: 0;
+  width: fit-content;
+  @include flexibilizar-centrar(space-around);
+}
+
+li {
+  display: block;
+  width: fit-content;
+  font-size: 14px;
+}

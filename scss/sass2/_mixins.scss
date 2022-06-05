@@ -1,0 +1,7 @@
+@import "../partials/variables/variables";
+
+
+@mixin flexibilizar-centrar($alineado) {
+    display: flex;
+    justify-content: $alineado;
+}

@@ -1,0 +1,251 @@
+@import "partials/variables/variables";
+@import "partials/footer";
+@import "partials/media";
+@import "partials/header";
+@import "sass2/extend";
+@import "sass2/mixins";
+@import "partials/carrusel";
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 5px 10px 5px;
+
+  h4 {
+    text-align: center;
+  }
+}
+
+section article {
+  width: 100%;
+}
+
+section article p {
+  font-family: $fuentepredeterminada2;
+  line-height: 1, 5;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*El orden de prioridad de llamado es: 
+1- Etiqueta, 
+2- clases, 
+3- ID, 
+4- Inline*/
+/* le da estilos al elemento raiz, no formatea el body */
+:root {
+  font-family: $fuentepredeterminada1;
+  text-align: center;
+  justify-content: center;
+}
+
+.acomodo {
+  display: flex;
+  margin-top: 600px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.arreglo {
+  width: 100%;
+  @extend %centrarConFlexCol;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-family: $fuentepredeterminada1;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+}
+
+.formulario {
+  width: 70%;
+  color: black;
+  font-family: $fuentepredeterminada1;
+  list-style: none;
+  background-color: white;
+  @include flexibilizar-centrar(center);
+  padding: 30px 0 20px 0;
+  margin: 5px 0 0 0;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.form-card {
+  color: black;
+  font-family: $fuentepredeterminada1;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 15px;
+  list-style: none;
+  background-color: white;
+  @include flexibilizar-centrar(center);
+  flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
+}
+
+form {
+  width: 50%;
+}
+
+.form-group {
+  padding-bottom: 10px;
+}
+
+.cumples {
+  @extend %formato1;
+}
+
+.secc-cumples {
+  @extend %formato1;
+  align-items: center !important;
+}
+
+.fotos-cumple {
+  margin-top: 700px;
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+
+  h4 {
+    width: 100%;
+  }
+
+  img {
+    margin: 5px;
+  }
+}
+
+.club {
+  @extend %formato1;
+}
+
+.carta {
+  @extend %formato1;
+
+  img {
+    margin: 15px auto 0 auto;
+  }
+}
+
+.club {
+  @extend %formato1;
+}
+
+.playlist {
+  @extend %formato1;
+}
+
+body {
+  width: 100%;
+  font-family: $fuentepredeterminada1;
+  background-color: whitesmoke;
+}
+
+
+.container-fluid>.nav-link {
+  color: rgba(0, 0, 0, 0.5)
+}
+
+/* Usamos un selector de elemento*/
+.logoWapp {
+  align-items: center;
+}
+
+/*Usamos un selector de clase.
+Llamamos a la clase con un "." 
+Se le llama kebab-case, metodologia de estructura de clases.
+*/
+/* Usamos el id con un "#" .
+El Id se utiliza una vez por HTML*/
+
+.form-titulo {
+  display: block;
+  font-size: 1.17rem;
+  /* margin-block-start: 1rem;
+  margin-block-end: 1rem; */
+  margin: 15px;
+  font-weight: bold;
+}
+
+.celda {
+  max-width: 400px;
+}
+
+.tarjeta {
+  color: black;
+  font-family: $fuentepredeterminada1;
+  margin-left: 350px;
+  margin-right: 200px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  list-style: none;
+  background-color: white;
+  width: fit-content;
+  @include flexibilizar-centrar(center);
+  flex-wrap: wrap;
+}
+
+.botones {
+  position: relative;
+  display: block;
+  width: fit-content;
+  padding: 15px;
+  margin: auto;
+}
+
+.tarjeta-titulo {
+  display: block;
+  font-size: 1.17rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  font-weight: bold;
+}
+
+.card {
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: $fuentepredeterminada1;
+  margin-left: 35%;
+}
+
+.terminos {
+  display: block;
+  position: relative;
+  margin: 20px;
+}
+
+.coments {
+  display: block;
+  position: relative;
+  margin: 5px;
+  width: auto;
+}
+
+@media (max-width: 900px) {
+  .carousel {
+    display: none;
+  }
+
+  .acomodo {
+    margin-top: 0;
+  }
+
+  .fotos-cumple {
+    margin-top: 0;
+  }
+}
